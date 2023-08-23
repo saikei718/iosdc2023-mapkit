@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4596F5162A4BFA1600B71670 /* SpotSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596F5142A4BFA1600B71670 /* SpotSearchViewController.swift */; };
+		4596F5172A4BFA1600B71670 /* SpotSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4596F5152A4BFA1600B71670 /* SpotSearchViewController.xib */; };
+		4596F51B2A4C350B00B71670 /* AnnotationCustomizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596F5192A4C350B00B71670 /* AnnotationCustomizeViewController.swift */; };
+		4596F51C2A4C350B00B71670 /* AnnotationCustomizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4596F51A2A4C350B00B71670 /* AnnotationCustomizeViewController.xib */; };
+		A00FD4822A9525040010B64F /* RouteSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00FD4802A9525040010B64F /* RouteSearchViewController.swift */; };
+		A00FD4832A9525040010B64F /* RouteSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00FD4812A9525040010B64F /* RouteSearchViewController.xib */; };
+		A00FD4872A952CD80010B64F /* LookAroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00FD4852A952CD80010B64F /* LookAroundViewController.swift */; };
+		A00FD4882A952CD80010B64F /* LookAroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00FD4862A952CD80010B64F /* LookAroundViewController.xib */; };
+		A00FD48B2A9676060010B64F /* OrangeAnnotationCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00FD48A2A9676060010B64F /* OrangeAnnotationCustomView.swift */; };
+		A00FD48D2A96760E0010B64F /* OrangeAnnotationCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00FD48C2A96760E0010B64F /* OrangeAnnotationCustomView.xib */; };
+		A04CFE472A49BEF30062FB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CFE462A49BEF30062FB22 /* AppDelegate.swift */; };
+		A04CFE492A49BEF30062FB22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CFE482A49BEF30062FB22 /* SceneDelegate.swift */; };
+		A04CFE4B2A49BEF30062FB22 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CFE4A2A49BEF30062FB22 /* MainViewController.swift */; };
+		A04CFE502A49BEF40062FB22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04CFE4F2A49BEF40062FB22 /* Assets.xcassets */; };
+		A04CFE532A49BEF40062FB22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04CFE512A49BEF40062FB22 /* LaunchScreen.storyboard */; };
+		A04CFE5E2A49D5190062FB22 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CFE5D2A49D5190062FB22 /* Destination.swift */; };
+		A04CFE642A49EA090062FB22 /* GeocodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04CFE622A49EA090062FB22 /* GeocodingViewController.swift */; };
+		A04CFE652A49EA090062FB22 /* GeocodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04CFE632A49EA090062FB22 /* GeocodingViewController.xib */; };
+		A07524882A9CABBD0034B0D3 /* PoiInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07524862A9CABBD0034B0D3 /* PoiInformationViewController.swift */; };
+		A07524892A9CABBD0034B0D3 /* PoiInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07524872A9CABBD0034B0D3 /* PoiInformationViewController.xib */; };
+		A0AE96492A4B1F7500715977 /* ReverseGeocodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0AE96472A4B1F7500715977 /* ReverseGeocodingViewController.xib */; };
+		A0AE964A2A4B1F7500715977 /* ReverseGeocodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE96482A4B1F7500715977 /* ReverseGeocodingViewController.swift */; };
+		A0AE964E2A4B276100715977 /* PoiFilteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE964C2A4B276100715977 /* PoiFilteringViewController.swift */; };
+		A0AE964F2A4B276100715977 /* PoiFilteringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0AE964D2A4B276100715977 /* PoiFilteringViewController.xib */; };
+		A0AE96532A4B626F00715977 /* PolygonDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE96512A4B626F00715977 /* PolygonDrawingViewController.swift */; };
+		A0AE96542A4B626F00715977 /* PolygonDrawingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0AE96522A4B626F00715977 /* PolygonDrawingViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4596F5142A4BFA1600B71670 /* SpotSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotSearchViewController.swift; sourceTree = "<group>"; };
+		4596F5152A4BFA1600B71670 /* SpotSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpotSearchViewController.xib; sourceTree = "<group>"; };
+		4596F5192A4C350B00B71670 /* AnnotationCustomizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationCustomizeViewController.swift; sourceTree = "<group>"; };
+		4596F51A2A4C350B00B71670 /* AnnotationCustomizeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnotationCustomizeViewController.xib; sourceTree = "<group>"; };
+		A00FD4802A9525040010B64F /* RouteSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSearchViewController.swift; sourceTree = "<group>"; };
+		A00FD4812A9525040010B64F /* RouteSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteSearchViewController.xib; sourceTree = "<group>"; };
+		A00FD4852A952CD80010B64F /* LookAroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookAroundViewController.swift; sourceTree = "<group>"; };
+		A00FD4862A952CD80010B64F /* LookAroundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LookAroundViewController.xib; sourceTree = "<group>"; };
+		A00FD48A2A9676060010B64F /* OrangeAnnotationCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeAnnotationCustomView.swift; sourceTree = "<group>"; };
+		A00FD48C2A96760E0010B64F /* OrangeAnnotationCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrangeAnnotationCustomView.xib; sourceTree = "<group>"; };
+		A04CFE432A49BEF30062FB22 /* iosdc2023-mapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iosdc2023-mapkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04CFE462A49BEF30062FB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A04CFE482A49BEF30062FB22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A04CFE4A2A49BEF30062FB22 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A04CFE4F2A49BEF40062FB22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A04CFE522A49BEF40062FB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A04CFE542A49BEF40062FB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04CFE5D2A49D5190062FB22 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		A04CFE622A49EA090062FB22 /* GeocodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingViewController.swift; sourceTree = "<group>"; };
+		A04CFE632A49EA090062FB22 /* GeocodingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeocodingViewController.xib; sourceTree = "<group>"; };
+		A07524862A9CABBD0034B0D3 /* PoiInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiInformationViewController.swift; sourceTree = "<group>"; };
+		A07524872A9CABBD0034B0D3 /* PoiInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoiInformationViewController.xib; sourceTree = "<group>"; };
+		A0AE96472A4B1F7500715977 /* ReverseGeocodingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReverseGeocodingViewController.xib; sourceTree = "<group>"; };
+		A0AE96482A4B1F7500715977 /* ReverseGeocodingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseGeocodingViewController.swift; sourceTree = "<group>"; };
+		A0AE964C2A4B276100715977 /* PoiFilteringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiFilteringViewController.swift; sourceTree = "<group>"; };
+		A0AE964D2A4B276100715977 /* PoiFilteringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PoiFilteringViewController.xib; sourceTree = "<group>"; };
+		A0AE96512A4B626F00715977 /* PolygonDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonDrawingViewController.swift; sourceTree = "<group>"; };
+		A0AE96522A4B626F00715977 /* PolygonDrawingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolygonDrawingViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A04CFE402A49BEF30062FB22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4596F50B2A4BF87C00B71670 /* SpotSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4596F5142A4BFA1600B71670 /* SpotSearchViewController.swift */,
+				4596F5152A4BFA1600B71670 /* SpotSearchViewController.xib */,
+			);
+			path = SpotSearch;
+			sourceTree = "<group>";
+		};
+		4596F5182A4C34EC00B71670 /* AnnotationCustomize */ = {
+			isa = PBXGroup;
+			children = (
+				4596F5192A4C350B00B71670 /* AnnotationCustomizeViewController.swift */,
+				4596F51A2A4C350B00B71670 /* AnnotationCustomizeViewController.xib */,
+				A00FD4892A9675CB0010B64F /* Annotation */,
+			);
+			path = AnnotationCustomize;
+			sourceTree = "<group>";
+		};
+		A00FD47F2A9524D20010B64F /* RouteSearch */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD4802A9525040010B64F /* RouteSearchViewController.swift */,
+				A00FD4812A9525040010B64F /* RouteSearchViewController.xib */,
+			);
+			path = RouteSearch;
+			sourceTree = "<group>";
+		};
+		A00FD4842A952CB20010B64F /* LookAround */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD4852A952CD80010B64F /* LookAroundViewController.swift */,
+				A00FD4862A952CD80010B64F /* LookAroundViewController.xib */,
+			);
+			path = LookAround;
+			sourceTree = "<group>";
+		};
+		A00FD4892A9675CB0010B64F /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				A00FD48A2A9676060010B64F /* OrangeAnnotationCustomView.swift */,
+				A00FD48C2A96760E0010B64F /* OrangeAnnotationCustomView.xib */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		A04CFE3A2A49BEF30062FB22 = {
+			isa = PBXGroup;
+			children = (
+				A04CFE452A49BEF30062FB22 /* iosdc2023-mapkit */,
+				A04CFE442A49BEF30062FB22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A04CFE442A49BEF30062FB22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE432A49BEF30062FB22 /* iosdc2023-mapkit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A04CFE452A49BEF30062FB22 /* iosdc2023-mapkit */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE5B2A49CF6D0062FB22 /* Application */,
+				A04CFE5C2A49CF8A0062FB22 /* Module */,
+				A04CFE5A2A49CF4C0062FB22 /* Resources */,
+			);
+			path = "iosdc2023-mapkit";
+			sourceTree = "<group>";
+		};
+		A04CFE5A2A49CF4C0062FB22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE4F2A49BEF40062FB22 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A04CFE5B2A49CF6D0062FB22 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE462A49BEF30062FB22 /* AppDelegate.swift */,
+				A04CFE482A49BEF30062FB22 /* SceneDelegate.swift */,
+				A04CFE512A49BEF40062FB22 /* LaunchScreen.storyboard */,
+				A04CFE542A49BEF40062FB22 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A04CFE5C2A49CF8A0062FB22 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE5F2A49D5300062FB22 /* Main */,
+				A0AE96452A4B1EE200715977 /* Geocoding */,
+				A0AE96462A4B1EFA00715977 /* ReverseGeocoding */,
+				4596F50B2A4BF87C00B71670 /* SpotSearch */,
+				A00FD47F2A9524D20010B64F /* RouteSearch */,
+				4596F5182A4C34EC00B71670 /* AnnotationCustomize */,
+				A0AE964B2A4B274800715977 /* PoiFiltering */,
+				A07524852A9CABA40034B0D3 /* PoiInformation */,
+				A0AE96502A4B625800715977 /* PolygonDrawing */,
+				A00FD4842A952CB20010B64F /* LookAround */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A04CFE5F2A49D5300062FB22 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE4A2A49BEF30062FB22 /* MainViewController.swift */,
+				A04CFE5D2A49D5190062FB22 /* Destination.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A07524852A9CABA40034B0D3 /* PoiInformation */ = {
+			isa = PBXGroup;
+			children = (
+				A07524862A9CABBD0034B0D3 /* PoiInformationViewController.swift */,
+				A07524872A9CABBD0034B0D3 /* PoiInformationViewController.xib */,
+			);
+			path = PoiInformation;
+			sourceTree = "<group>";
+		};
+		A0AE96452A4B1EE200715977 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				A04CFE622A49EA090062FB22 /* GeocodingViewController.swift */,
+				A04CFE632A49EA090062FB22 /* GeocodingViewController.xib */,
+			);
+			path = Geocoding;
+			sourceTree = "<group>";
+		};
+		A0AE96462A4B1EFA00715977 /* ReverseGeocoding */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE96482A4B1F7500715977 /* ReverseGeocodingViewController.swift */,
+				A0AE96472A4B1F7500715977 /* ReverseGeocodingViewController.xib */,
+			);
+			path = ReverseGeocoding;
+			sourceTree = "<group>";
+		};
+		A0AE964B2A4B274800715977 /* PoiFiltering */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE964C2A4B276100715977 /* PoiFilteringViewController.swift */,
+				A0AE964D2A4B276100715977 /* PoiFilteringViewController.xib */,
+			);
+			path = PoiFiltering;
+			sourceTree = "<group>";
+		};
+		A0AE96502A4B625800715977 /* PolygonDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE96512A4B626F00715977 /* PolygonDrawingViewController.swift */,
+				A0AE96522A4B626F00715977 /* PolygonDrawingViewController.xib */,
+			);
+			path = PolygonDrawing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A04CFE422A49BEF30062FB22 /* iosdc2023-mapkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04CFE572A49BEF40062FB22 /* Build configuration list for PBXNativeTarget "iosdc2023-mapkit" */;
+			buildPhases = (
+				A04CFE3F2A49BEF30062FB22 /* Sources */,
+				A04CFE402A49BEF30062FB22 /* Frameworks */,
+				A04CFE412A49BEF30062FB22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iosdc2023-mapkit";
+			productName = "iosdc2023-mapkit";
+			productReference = A04CFE432A49BEF30062FB22 /* iosdc2023-mapkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A04CFE3B2A49BEF30062FB22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A04CFE422A49BEF30062FB22 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = A04CFE3E2A49BEF30062FB22 /* Build configuration list for PBXProject "iosdc2023-mapkit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A04CFE3A2A49BEF30062FB22;
+			productRefGroup = A04CFE442A49BEF30062FB22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A04CFE422A49BEF30062FB22 /* iosdc2023-mapkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A04CFE412A49BEF30062FB22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4596F5172A4BFA1600B71670 /* SpotSearchViewController.xib in Resources */,
+				A04CFE532A49BEF40062FB22 /* LaunchScreen.storyboard in Resources */,
+				A0AE96492A4B1F7500715977 /* ReverseGeocodingViewController.xib in Resources */,
+				A0AE964F2A4B276100715977 /* PoiFilteringViewController.xib in Resources */,
+				A04CFE652A49EA090062FB22 /* GeocodingViewController.xib in Resources */,
+				A0AE96542A4B626F00715977 /* PolygonDrawingViewController.xib in Resources */,
+				A04CFE502A49BEF40062FB22 /* Assets.xcassets in Resources */,
+				A00FD4832A9525040010B64F /* RouteSearchViewController.xib in Resources */,
+				A07524892A9CABBD0034B0D3 /* PoiInformationViewController.xib in Resources */,
+				A00FD4882A952CD80010B64F /* LookAroundViewController.xib in Resources */,
+				A00FD48D2A96760E0010B64F /* OrangeAnnotationCustomView.xib in Resources */,
+				4596F51C2A4C350B00B71670 /* AnnotationCustomizeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A04CFE3F2A49BEF30062FB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AE96532A4B626F00715977 /* PolygonDrawingViewController.swift in Sources */,
+				A04CFE4B2A49BEF30062FB22 /* MainViewController.swift in Sources */,
+				A04CFE472A49BEF30062FB22 /* AppDelegate.swift in Sources */,
+				A04CFE642A49EA090062FB22 /* GeocodingViewController.swift in Sources */,
+				4596F5162A4BFA1600B71670 /* SpotSearchViewController.swift in Sources */,
+				A04CFE5E2A49D5190062FB22 /* Destination.swift in Sources */,
+				A04CFE492A49BEF30062FB22 /* SceneDelegate.swift in Sources */,
+				A00FD48B2A9676060010B64F /* OrangeAnnotationCustomView.swift in Sources */,
+				A07524882A9CABBD0034B0D3 /* PoiInformationViewController.swift in Sources */,
+				A0AE964E2A4B276100715977 /* PoiFilteringViewController.swift in Sources */,
+				A00FD4822A9525040010B64F /* RouteSearchViewController.swift in Sources */,
+				A0AE964A2A4B1F7500715977 /* ReverseGeocodingViewController.swift in Sources */,
+				A00FD4872A952CD80010B64F /* LookAroundViewController.swift in Sources */,
+				4596F51B2A4C350B00B71670 /* AnnotationCustomizeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A04CFE512A49BEF40062FB22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A04CFE522A49BEF40062FB22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A04CFE552A49BEF40062FB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A04CFE562A49BEF40062FB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A04CFE582A49BEF40062FB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iosdc2023-mapkit/Application/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoge.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A04CFE592A49BEF40062FB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iosdc2023-mapkit/Application/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hoge.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A04CFE3E2A49BEF30062FB22 /* Build configuration list for PBXProject "iosdc2023-mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04CFE552A49BEF40062FB22 /* Debug */,
+				A04CFE562A49BEF40062FB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04CFE572A49BEF40062FB22 /* Build configuration list for PBXNativeTarget "iosdc2023-mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04CFE582A49BEF40062FB22 /* Debug */,
+				A04CFE592A49BEF40062FB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A04CFE3B2A49BEF30062FB22 /* Project object */;
+}

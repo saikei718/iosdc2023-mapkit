@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PoiFilteringViewController" customModule="iosdc2023_mapkit" customModuleProvider="target">
+            <connections>
+                <outlet property="filteringStackView" destination="6g8-H4-08p" id="Qgt-17-rqi"/>
+                <outlet property="mapView" destination="AIC-Vu-beR" id="RVe-Zp-txn"/>
+                <outlet property="parkSwitch" destination="49L-hC-ou3" id="Lgn-Iu-wOC"/>
+                <outlet property="parkingSwitch" destination="RMr-zD-bw0" id="uqA-o5-Xwh"/>
+                <outlet property="restaurantSwitch" destination="MDa-K7-ksd" id="xCc-4h-EuE"/>
+                <outlet property="schoolSwitch" destination="tBF-tq-Kez" id="IZA-j4-qe1"/>
+                <outlet property="segmentedControl" destination="AK5-sI-cBo" id="35r-79-Man"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3kj-bV-O5O">
+                    <rect key="frame" x="20" y="67" width="353" height="691"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AK5-sI-cBo">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="32"/>
+                            <segments>
+                                <segment title="全て表示"/>
+                                <segment title="全て非表示"/>
+                                <segment title="フィルタリング"/>
+                            </segments>
+                            <connections>
+                                <action selector="didChangeSegmentedControl:" destination="-1" eventType="valueChanged" id="voa-g9-L9a"/>
+                            </connections>
+                        </segmentedControl>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIC-Vu-beR">
+                            <rect key="frame" x="0.0" y="47" width="353" height="529.66666666666663"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="AIC-Vu-beR" secondAttribute="height" multiplier="2:3" id="FZ8-gA-NHc"/>
+                            </constraints>
+                            <standardMapConfiguration key="preferredConfiguration"/>
+                        </mapView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-H4-08p" userLabel="Filtering Stack View">
+                            <rect key="frame" x="0.0" y="592.66666666666663" width="353" height="98.333333333333371"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フィルタリング項目（抜粋）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scO-hs-zYY">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="qae-jx-j6S">
+                                    <rect key="frame" x="0.0" y="28.333333333333371" width="353" height="31"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWb-Ql-oEZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レストラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQC-uf-dTf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDa-K7-ksd">
+                                                    <rect key="frame" x="107.66666666666669" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="didUpdateSwitch:" destination="-1" eventType="valueChanged" id="PsR-RA-67k"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVL-8C-f65">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="156.33333333333337" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学校" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyo-R6-MRR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="107.33333333333333" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tBF-tq-Kez">
+                                                    <rect key="frame" x="107.33333333333334" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="didUpdateSwitch:" destination="-1" eventType="valueChanged" id="PBc-e5-4UR"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="PJj-yU-esY">
+                                    <rect key="frame" x="0.0" y="67.333333333333371" width="353" height="31"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9R-nY-SqZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公園" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMh-kK-Fm7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49L-hC-ou3">
+                                                    <rect key="frame" x="107.66666666666669" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="didUpdateSwitch:" destination="-1" eventType="valueChanged" id="lhK-Yv-5iV"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfr-GI-dDU">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="156.33333333333337" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="駐車場" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-A1-ulb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="107.33333333333333" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMr-zD-bw0">
+                                                    <rect key="frame" x="107.33333333333334" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="didUpdateSwitch:" destination="-1" eventType="valueChanged" id="9Ia-Nn-yZj"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3kj-bV-O5O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="L9c-LQ-lp1"/>
+                <constraint firstItem="3kj-bV-O5O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="M9E-5e-c4E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3kj-bV-O5O" secondAttribute="trailing" constant="20" id="Mx5-iZ-i09"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
